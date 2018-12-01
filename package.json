@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "graphql": "^14.0.2",
     "serverless-appsync-plugin": "^1.0.9",
     "serverless-plugin-aws-alerts": "^1.2.4"
   }

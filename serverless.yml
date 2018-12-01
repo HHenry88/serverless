@@ -56,13 +56,13 @@ provider:
 
 functions:
   hello:
-    handler: handler/hello.hello
+    handler: handlers/hello.hello
     events:
       - http:
           path: users/create
           method: get
   getDate:
-    handler: handler/date.getDate
+    handler: handlers/date.getDate
     events:
       - http:
           path: date
@@ -111,6 +111,6 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
-plugins:
-  - serverless-appsync-plugin
-  - serverless-plugin-aws-alerts
+# plugins:
+#   - serverless-appsync-plugin
+#   - serverless-plugin-aws-alerts
