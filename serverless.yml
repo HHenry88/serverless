@@ -56,13 +56,13 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler/hello.hello
     events:
       - http:
           path: users/create
           method: get
   getDate:
-    handler: handler.getDate
+    handler: handler/date.getDate
     events:
       - http:
           path: date
