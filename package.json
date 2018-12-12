@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "apollo-server-lambda": "^2.2.6",
     "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3",
     "serverless-appsync-plugin": "^1.0.9",
     "serverless-plugin-aws-alerts": "^1.2.4"
   }
