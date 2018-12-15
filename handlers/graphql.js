@@ -29,3 +29,9 @@ const newSchema = new GraphQLSchema({
     }
   })
 });
+
+module.exports.query = (event, context, cb) =>
+  graphql(schema, event.queryStringParameters.query).then(
+    result => cb(null, { statusCode: 200, body: JSON.stringify(result) }),
+    err => cb(err)
+  );
